@@ -5,7 +5,11 @@ namespace GenomMerger.Utils.DirectedGraph
 {
     public class Node<TElement> where TElement : ILeftToRightRelation<TElement>
     {
-        //FILL IN
+        /// <summary>
+        /// The list of nodes the current attaches to.
+        /// </summary>
+        private List<Node<TElement>> _neighbours;
+
         public TElement Data { get; private set; }
         public IEnumerable<Node<TElement>> Neighbours
         {
@@ -30,10 +34,5 @@ namespace GenomMerger.Utils.DirectedGraph
 
             _neighbours.Add(nodeB);
         }
-
-        /// <summary>
-        /// The list of nodes the current attaches to.
-        /// </summary>
-        private List<Node<TElement>> _neighbours;
     }
 }

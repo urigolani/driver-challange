@@ -7,7 +7,7 @@ using System.Text;
 
 namespace GenomMerger
 {
-    public class GenomeMerger
+    public static class GenomeMerger
     {
         /// <summary>
         /// Returns the genom sequence built from merging parts with the following reason:

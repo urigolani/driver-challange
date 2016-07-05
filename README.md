@@ -2,10 +2,11 @@
 
 ### Getting Started
 1. Open GenomeMerger.sln
-2. Compile GenomeMergerTool
+2. Run the tests at GenomeMergerTest
+2. Compile GenomeMergerApp
 3. Find the exe in the bin dir and using a cmd run: 
 ```
-GenomeMergerTool.exe <genome-part-file>.txt
+GenomeMergerApp.exe <genome-part-file>.txt
 ```
 
 ### Merging Genome Parts
@@ -23,7 +24,7 @@ On the other way, taking a result of the Merge parts problem, before removing ov
 ### Implementation Details
 There are 3 projects in the solution:
 * GenomeMerger - A library exposing the API.
-* GenomeMergerTool - A simple console application utilizing the Merger lib.
+* GenomeMergerApp - A simple console application utilizing the Merger lib.
 * GenomeMergerTest - Unit tests.
 
 The Main flow appears in GenomeMerger/GenomeMerger.cs under the the _Merge_ function and is as follows:
