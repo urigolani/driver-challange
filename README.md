@@ -34,4 +34,4 @@ The Main flow appears in GenomeMerger/GenomeMerger.cs under the the _Merge_ func
 
 ##### Assumptions and outcomes 
 1. Parts are approx 1000 char long, and are rather arbitrary, hence, the nunmber of relations and, following that, edges in the graph, is expected to be very low but at least single exit degree per node, since there is a unique path. With that in mind the most trivial implementation for finding hemiltonian path was used.
-2. Since word are very long and their alphabet is limited, only 4 chars, a more sophisticated implementation was used in order to find how words overlap. This redueces the each two word comparisement to O(wordA + wordB) instead of the trivial O(wordA * wordB) solution.
+2. Since words are very long and their alphabet is limited, only 4 chars, a more sophisticated implementation was used in order to find how words overlap. This reduces the runtime for each two word comparisement to O(wordA + wordB) instead of the trivial O(wordA * wordB) solution.
